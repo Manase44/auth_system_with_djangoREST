@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-body, html{
+body,
+html {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --main-color:#0E46A3;
-  --other-color:#dbdbdb;
+  --main-color: #0e46a3;
+  --other-color: #dbdbdb;
 }
 
-.page-container{
+.page-container {
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -30,71 +31,72 @@ body, html{
   display: grid;
   gap: 1rem;
 }
-.form-div-header h1{
+.form-div-header h1 {
   text-align: center;
   text-transform: capitalize;
 }
-.form-div form{
+.form-div form {
   width: 100%;
 }
-.form-input label{
+.form-input label {
   display: grid;
   text-transform: capitalize;
   font-size: 15px;
 }
-.form-input{
-  margin-bottom: .8rem;
+.form-input {
+  margin-bottom: 0.8rem;
 }
-.form-input input{
+.form-input input {
   border: 1px solid var(--other-color);
-  outline-color:var(--main-color) ;
+  outline-color: var(--main-color);
   width: 100%;
   border-radius: 7px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 18px;
 }
 
-button{
+button {
   background-color: var(--main-color);
   border: none;
   font-size: 18px;
   font-weight: 550;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 7px;
   width: 100%;
   color: #fff;
   text-transform: capitalize;
   cursor: pointer;
-  margin: .6rem 0;
-  transition: all .2s;
+  margin: 0.6rem 0;
+  transition: all 0.2s;
 }
-button:hover, header span:hover{
+button:hover,
+header span:hover {
   background-color: #3174df;
 }
-.form-small-text{
+.form-small-text {
   font-size: 14px;
 }
-.form-small-text a{
+.form-small-text a {
   color: var(--main-color);
 }
-header{
+header {
   width: 100vw;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
-header span{
+header span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem .8rem;
+  padding: 0.5rem 0.8rem;
   background-color: var(--main-color);
   color: #fff;
   border-radius: 7px;
   font-weight: 500;
   cursor: pointer;
 }
-.error{
+.error {
   color: red;
   text-align: center;
   font-size: 13px;
@@ -107,7 +109,7 @@ header span{
   }
 }
 @media screen and (max-width: 768px) {
-  header{
+  header {
     display: grid;
     justify-content: center;
     gap: 2rem;
